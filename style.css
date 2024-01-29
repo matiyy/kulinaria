@@ -1,0 +1,408 @@
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+body{
+    background: #fff;
+    margin: 0;
+}
+
+
+h1,
+h2,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.row {
+    display: flex
+}
+
+.column{
+    display: grid;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header {   /* style naglowka*/
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
+    fill: #000;
+}
+.logo {
+    height: 100px;
+}
+nav {
+    align-items: center;
+    flex-grow: 1;
+    gap: 2em;
+}
+
+nav ul, .footer-links ul, .footer-content ul{  /* style navi*/
+    align-items: center;
+    gap: 2em;
+}
+
+.primary-links {
+    margin: auto;
+}
+
+nav a,
+.footer-content ul a {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav a:hoover, /* Hover Effect for Links */
+.footer-content ul a:hover,
+.footer-links ul a:hover {
+    color: #ff7426;
+    fill: #ff7426;
+}
+
+/*recipes*/
+.recipe {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    background: #fff;
+    padding: 0.5em;
+    max-width: 125px;
+    box-shadow: 3px 3px 6px #989898;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px
+}
+
+.recipe img{
+    max-width: 20px;
+}
+
+p {
+    font-size: 16px;
+    color:#000;
+}
+
+.time {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 2em 0;
+}
+
+.time .row {
+    align-items: center;
+    gap: 1em;
+}
+
+.time p {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.recipes {
+    padding: 1em 0;
+}
+
+.section-title { /* Section Titles and Images */
+    object-fit: contain;
+}
+
+.section-title img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.recipe-cards { /* Recipe Cards Styles */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.card {
+    position: relative;
+    background: linear-gradient(180deg, #fff, #dbcec3);;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    max-height: 220px;
+}
+
+.card h5 {
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    padding: 2em 0;
+    fill: #000;
+}
+
+.footer-content{
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.footer-content p{
+    padding: 1em 0;
+}
+
+footer hr{
+    color: #989898
+}
+
+.footer-links{
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding-top: 2em;
+}
+
+.copy-rights {
+    margin: auto;
+}
+
+.subscribe-card{   /* Subscribe Card and Input Styles */
+    margin-right: 20px;
+    max-width: 50%;
+}
+
+.subscribe-input{
+    width: 50%
+}
+
+
+.output-pop-up{
+    background: #fff;
+    padding: 1em;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-output-pop-up{   /* Output Pop-up Styles */
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.output-pop-up h2 {
+    margin-top: 5px;
+    padding: 10px 0;
+}
+
+.output-pop-up button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #dbcec3;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+body {  /* Additional Body Styles */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.subscribe { /* Subscribe Section Styles */
+    padding: 40px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subscribe-card,
+.subscribe-input {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-card h2 {
+    color: #333;
+}
+
+.subscribe-input form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#submitBtn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #555;
+}
+
+
+
+.footer { /* Footer Styles Continued */
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links-row a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links-row svg {
+    margin-right: 10px;
+    fill: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.copy-rights {
+    margin: 0;
+}
+
+/* podswietlenie kart z daniami*/
+
+  .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover { /* Hover Effect for Recipe Cards */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+body {
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .card h5 {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .card:hover h5 {
+    color: #ff5733; /* Zmiana koloru po najechaniu kursorem */
+  }
+
+
